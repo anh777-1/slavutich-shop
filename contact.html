@@ -3,23 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты | ИП «Славутич»</title>
+    <title>Контакты | Магазин «Славутич»</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Тот же стиль */
-        body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f4f7fa; color:#34495e; line-height:1.6; }
-        header { background:linear-gradient(to right, #5dade2, #85c1e9); color:white; padding:40px 20px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.05); }
-        nav { background:#3498db; padding:15px; text-align:center; box-shadow:0 2px 4px rgba(0,0,0,0.05); }
-        nav a { color:white; margin:0 25px; text-decoration:none; font-weight:700; transition:color 0.3s; }
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin:0; 
+            padding:0; 
+            background:#f4f7fa; 
+            color:#34495e; 
+            line-height:1.7;
+            font-size: 1.18rem;
+        }
+        header { 
+            background:linear-gradient(to right, #5dade2, #85c1e9); 
+            color:white; 
+            padding:40px 20px; 
+            text-align:center; 
+            box-shadow:0 4px 8px rgba(0,0,0,0.05); 
+        }
+        nav { 
+            background:#3498db; 
+            padding:15px; 
+            text-align:center; 
+            box-shadow:0 2px 4px rgba(0,0,0,0.05); 
+        }
+        nav a { 
+            color:white; 
+            margin:0 25px; 
+            text-decoration:none; 
+            font-weight:700; 
+            transition:color 0.3s; 
+        }
         nav a:hover { color:#f1c40f; }
-        .container { max-width:1300px; margin:40px auto; padding:30px; background:white; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.03); }
-        footer { background:linear-gradient(to right, #5dade2, #85c1e9); color:white; text-align:center; padding:20px; width:100%; box-shadow:0 -2px 4px rgba(0,0,0,0.05); }
+        .container { 
+            max-width:1300px; 
+            margin:40px auto; 
+            padding:40px; 
+            background:white; 
+            border-radius:12px; 
+            box-shadow:0 0 20px rgba(0,0,0,0.03); 
+        }
+        .container h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .container p { 
+            font-size: 1.25rem; 
+            margin-bottom: 1.2rem; 
+        }
+        .map-container {
+            margin: 35px 0 10px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        footer { 
+            background:linear-gradient(to right, #5dade2, #85c1e9); 
+            color:white; 
+            text-align:center; 
+            padding:20px; 
+            width:100%; 
+            box-shadow:0 -2px 4px rgba(0,0,0,0.05); 
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ИП Магазин «Славутич»</h1>
+    <h1>Магазин «Славутич»</h1>
     <p>Контакты</p>
 </header>
 
@@ -32,14 +81,25 @@
 
 <div class="container">
     <h2>Как с нами связаться</h2>
-    <p>Адрес: г. Горловка, ул. Рихарда Зорге, 1а</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
-    <p>Email: info@slavutich.ru</p>
-    <p>Часы работы: Понедельник — Воскресенье с 7:00 до 19:00</p>
+    <p><strong>Адрес:</strong> г. Горловка, ул. Рихарда Зорге, 1а</p>
+    <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+    <p><strong>Email:</strong> info@slavutich.ru</p>
+    <p><strong>Часы работы:</strong> Понедельник — Воскресенье с 7:00 до 19:00</p>
+
+    <div class="map-container">
+        <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=38.12221112453473%2C48.33072147182677&z=18&pt=38.12221112453473%2C48.33072147182677%2Cpm2ntm&mode=whatshere" 
+            width="100%" 
+            height="450" 
+            frameborder="0" 
+            allowfullscreen="true"
+            style="display:block;">
+        </iframe>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 ИП Магазин «Славутич»</p>
+    <p>&copy; 2026 Магазин «Славутич»</p>
 </footer>
 
 </body>
